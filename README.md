@@ -1,4 +1,4 @@
-Shippings project
+Shippings
 ==============
 
 [![Build Status](https://secure.travis-ci.org/alexrmsouza/shippings.png?branch=master)](http://secure.travis-ci.org/alexrmsouza/shippings)
@@ -11,12 +11,13 @@ This is a project created to facilitate the integration between applications and
 First, clone this repository:
 
 ```bash
-$ git clone https://github.com/alexrmsouza/docker.git
+$ git clone https://github.com/alexrmsouza/shippings.git
 ```
 
 Then, run:
 
 ```bash
+$ cd shippings
 $ docker-compose up -d --build
 ```
 
