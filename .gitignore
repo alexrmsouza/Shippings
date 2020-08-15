@@ -1,2 +1,4 @@
 /logs
 .vscode
+workspace/app/composer.lock
+workspace/app/symfony.lock

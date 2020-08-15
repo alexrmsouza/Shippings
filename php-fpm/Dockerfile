@@ -12,6 +12,6 @@ RUN apk --update --no-cache add git \
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/shippings
+WORKDIR /var/www/app
 
 EXPOSE 9000
