@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-LABEL maintainer="Alex Souze <alexmscontato@gmail.com>"
+LABEL maintainer="Alex Souza <alexmscontato@gmail.com>"
 
 RUN apk add --update --no-cache nginx
 

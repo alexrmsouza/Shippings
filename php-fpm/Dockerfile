@@ -1,6 +1,6 @@
 FROM php:fpm-alpine
 
-LABEL maintainer="Alex Souze <alexmscontato@gmail.com>"
+LABEL maintainer="Alex Souza <alexmscontato@gmail.com>"
 
 RUN apk --update --no-cache add git \
     && docker-php-ext-install pdo_mysql \

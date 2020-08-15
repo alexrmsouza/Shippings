@@ -12,7 +12,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - docker-compose -v
   - docker -v
-  - mkdir symfony
+  - cd workspace/shippings
 
 script:
   - docker-compose -f docker-compose.yml up -d
