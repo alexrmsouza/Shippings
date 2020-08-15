@@ -1,7 +1,7 @@
 Shippings
 ==============
 
-[![Build Status](https://secure.travis-ci.org/alexrmsouza/shippings.png?branch=master)](http://secure.travis-ci.org/alexrmsouza/shippings)
+[![Build Status](https://secure.travis-ci.org/alexrmsouza/shippings.png?branch=master)](https://travis-ci.com/github/alexrmsouza/shippings)
 
 
 This is a project created to facilitate the integration between applications and freight gateways, created in Symfony and adapted for use in Docker.
