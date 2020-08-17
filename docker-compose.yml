@@ -5,7 +5,7 @@ services:
         container_name: php-fpm
         build: ./php-fpm
         ports:
-            - "9000:9000"
+            - "9000:9001"
         volumes:
             - ./workspace:/var/www:cached
             - ./logs:/var/log:cached

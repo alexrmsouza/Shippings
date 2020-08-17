@@ -43,7 +43,7 @@ This results in the following running containers:
              Name                           Command               State                 Ports
 -----------------------------------------------------------------------------------------------------------
 nginx                            nginx                            Up      443/tcp, 0.0.0.0:80->80/tcp
-php-fpm                          php-fpm7 -F                      Up      0.0.0.0:9000->9000/tcp
+php-fpm                          php-fpm7 -F                      Up      0.0.0.0:9001->9001/tcp
 ```
 
 # Read logs

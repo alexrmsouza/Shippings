@@ -12,6 +12,12 @@ RUN apk --update --no-cache add git \
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
+COPY xdebug.ini  /etc/php7/conf.d/
+
+COPY symfony.pool.conf /etc/php7/php-fpm.d/
+
+CMD ["php-fpm", "-F"]
+
 WORKDIR /var/www/app
 
 EXPOSE 9000
