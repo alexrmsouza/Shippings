@@ -21,12 +21,19 @@ $ cd shippings
 $ docker-compose up -d --build
 ```
 
+Go to the container bash and run:
+
+```bash
+$ composer install
+```
+
 You are done, you can visit your Symfony application on the following URL: `http://localhost`
 
 _Note :_ you can rebuild all Docker images by running:
 
 ```bash
-$ docker-compose build
+$ docker-compose down
+$ docker-compose up -d --build
 ```
 
 # How it works?
@@ -35,16 +42,6 @@ Here are the `docker-compose` built images:
 
 * `php`: This is the PHP-FPM container including the application volume mounted on,
 * `nginx`: This is the Nginx webserver container in which php volumes are mounted too,
-
-This results in the following running containers:
-
-```bash
-> $ docker-compose ps
-             Name                           Command               State                 Ports
------------------------------------------------------------------------------------------------------------
-nginx                            nginx                            Up      443/tcp, 0.0.0.0:80->80/tcp
-php-fpm                          php-fpm7 -F                      Up      0.0.0.0:9001->9001/tcp
-```
 
 # Read logs
 

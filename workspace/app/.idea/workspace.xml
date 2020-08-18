@@ -20,20 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ca7f70-98c9-4065-aba1-e56fecbb80bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/AbstractDelivery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Package.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Configurator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../php-fpm/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../php-fpm/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../php-fpm/xdebug.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/dev/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HubController.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -47,7 +55,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" show_pre_config_in_remote_debug="false" />
+  <component name="PhpDebugGeneral" show_pre_config_in_remote_debug="false" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="f747bbdd-268f-4ea5-9f02-a6adbce1c0ce" name="Shippings" port="5902" use_path_mappings="true">
@@ -96,7 +104,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1g9CdDHD8Wr5NLr0b1ozgWyDu4U" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -104,6 +114,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../docker-symfony/symfony" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -111,7 +122,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="Docker" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="Shippings" session_id="PHPSTORM">
@@ -130,6 +141,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597517508307</updated>
       <workItem from="1597517509468" duration="5188000" />
+      <workItem from="1597665381518" duration="4414000" />
+      <workItem from="1597748245836" duration="4647000" />
     </task>
     <servers />
   </component>
@@ -146,12 +159,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1597521010258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="520" y="236" key="#Notifications/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597521010258" />
+    <state x="554" y="0" key="#PHP" timestamp="1597749441845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="554" y="0" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1597749441845" />
     <state x="348" y="67" key="#Servers" timestamp="1597521550026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -160,6 +178,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597523261327" />
+    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1597749444043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597749444043" />
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597752322018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1597752322018" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597523232999">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -212,33 +238,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597553516607" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1597523269771">
+    <state x="621" y="152" key="NewPhpClassDialog" timestamp="1597751769412">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597523269771" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/src/Controller/HubController.php</url>
-          <line>22</line>
-          <properties>
-            <option name="className" value="\App\Controller\HubController" />
-            <option name="methodName" value="index" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/src/Controller/HubController.php</url>
-          <line>29</line>
-          <properties>
-            <option name="className" value="\App\Controller\HubController" />
-            <option name="methodName" value="search" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="519" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597703357175" />
+    <state x="621" y="152" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1597751769412" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1597749311810">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597703753966" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597749311810" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1597666741616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1597666741616" />
   </component>
 </project>

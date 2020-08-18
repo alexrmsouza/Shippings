@@ -1,12 +1,6 @@
 index:
     path: /
-    controller: App\Controller\HubController::index
+    controller: App\Controller\IndexController::index
     methods:
         - GET
         - POST
-
-search:
-    path: /search
-    controller: App\Controller\HubController::index
-    methods:
-        - GET
