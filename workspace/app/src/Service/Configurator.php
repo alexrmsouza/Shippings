@@ -1,9 +1,9 @@
 <?php
 
-
 namespace App\Service;
 
-
+use App\Entity\Package;
+use Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 class Configurator
@@ -12,9 +12,17 @@ class Configurator
     private $request;
 
     /**
+     * @throws Exception
+     */
+    public function findDeliveries()
+    {
+        return $package = new Package($this->request);
+    }
+
+    /**
      * @return Request
      */
-    public function getRequest(): Request
+    public function getRequest(): ?Request
     {
         return $this->request;
     }
@@ -24,7 +32,7 @@ class Configurator
      *
      * @return Configurator
      */
-    public function setRequest(Request $request): Configurator
+    public function setRequest(Request $request): self
     {
         $this->request = $request;
         return $this;

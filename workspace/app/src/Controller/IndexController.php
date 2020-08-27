@@ -26,12 +26,11 @@ class IndexController extends AbstractController
      */
     public function index(Request $request): JsonResponse
     {
-        $this->configurator
-            ->setRequest($request);
+        $deliveries = $this->configurator
+            ->setRequest($request)
+            ->findDeliveries()
+        ;
 
-        return new JsonResponse([
-            "success" => true,
-            "msg" => "Test",
-        ], 200);
+        return new JsonResponse($deliveries, 200);
     }
 }

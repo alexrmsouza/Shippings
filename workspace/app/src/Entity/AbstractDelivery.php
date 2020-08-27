@@ -4,5 +4,7 @@ namespace App\Entity;
 
 abstract class AbstractDelivery
 {
-    public $version;
+    const VERSION = "1.0";
+
+    public $referenceCode = "";
 }
