@@ -2,18 +2,33 @@
 
 namespace App\Factory;
 
-use App\Deliveries\Datafrete\v1\Entity\Datafrete;
+use App\Deliveries\Datafrete\v1\Entity\Datafrete as DatafreteV1;
+use Exception;
 
 class DeliveryFactory
 {
     const DATAFRETE = 'datafrete';
 
-    public function buildDelivery($delivery)
+    /**
+     * @param $delivery
+     * @param $version
+     *
+     * @return string
+     *
+     * @throws Exception
+     */
+    public function buildDelivery(string $delivery, string $version): string
     {
         $deliveriesDictionary = [
-            self::DATAFRETE => Datafrete::class
+            self::DATAFRETE => [
+                DatafreteV1::VERSION => DatafreteV1::class
+            ]
         ];
 
-        return $deliveriesDictionary[$delivery];
+        if (!isset($deliveriesDictionary[$delivery][$version])) {
+            throw new Exception("Invalid delivery ($delivery) or version ($version).");
+        }
+
+        return $deliveriesDictionary[$delivery][$version];
     }
 }

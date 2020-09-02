@@ -54,7 +54,7 @@ class Package extends AbstractUtility
         foreach ($deliveries as $delivery) {
             unset($delivery->version);
 
-            $this->deliveries[] = $this->cast($delivery, $this->deliveryFactory->buildDelivery($delivery->referenceCode));
+            $this->deliveries[] = $this->cast($delivery, $this->deliveryFactory->buildDelivery($delivery->referenceCode, $delivery->version));
         }
     }
 }
